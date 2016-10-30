@@ -1,0 +1,44 @@
+---------------------------------------------------------------------------------------------------------------
+DIRECTORY :
+
+bin : executables
+build : where to compile
+includes : modules includes files
+lib : libraries
+src : source files
+
+---------------------------------------------------------------------------------------------------------------
+SOURCE CODE :
+
+For this example it only consist of 3 files. And there are no subdirectories. 
+
+Note: In case of subdirectories, mention each folder accordingly.
+
+main   : color output, command line.
+
+---------------------------------------------------------------------------------------------------------------
+## COMPILATION :
+
+- Go to build directory :
+cd build
+
+- Create Makefile with one of these command choosing compiler (gfortran, ifort, ...)
+and build type (Debug, Release, ...). 
+
+FC=ifort cmake -D CMAKE_BUILD_TYPE=Debug  ..
+FC=ifort cmake -D CMAKE_BUILD_TYPE=Release  ..
+
+FC=gfortran cmake -D CMAKE_BUILD_TYPE=Debug  ..
+FC=gfortran cmake -D CMAKE_BUILD_TYPE=Release  ..
+
+FC=mpif90 cmake -D CMAKE_BUILD_TYPE=Debug  ..
+FC=mpif90 cmake -D CMAKE_BUILD_TYPE=Release  ..
+
+- Compile :
+make
+
+---------------------------------------------------------------------------------------------------------------
+## USAGE :
+
+- run desired executable(s) from bin folder.
+
