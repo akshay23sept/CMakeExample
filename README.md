@@ -6,9 +6,13 @@ _Please contact me if you have any question and/or contribution._
 ### DIRECTORIES :
 
 bin : executables
+
 build : where to compile
+
 includes : modules includes files
+
 lib : libraries
+
 src : source files
 
 
